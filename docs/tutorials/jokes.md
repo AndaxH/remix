@@ -3445,7 +3445,6 @@ export async function createUserSession(
 <summary>app/routes/jokes.tsx</summary>
 
 ```tsx filename=app/routes/jokes.tsx lines=[14,22,27,34,38,60-71]
-import type { User } from "@prisma/client";
 import type {
   LinksFunction,
   LoaderFunction,
@@ -4073,7 +4072,7 @@ export default function App() {
     </Document>
   );
 }
-// 60
+
 export function ErrorBoundary({ error }: { error: Error }) {
   return (
     <Document title="Uh-oh!">
